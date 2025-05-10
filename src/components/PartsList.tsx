@@ -18,7 +18,6 @@ export default function PartsList({searchTerm}: {searchTerm: string}) {
   ];
 
   const memoizedColumns = useMemo(() => columns, []);
-  const memoizedData = useMemo(() => icData, []);
 
   const filteredData = useMemo(() => {
     return icData.filter((row) =>
